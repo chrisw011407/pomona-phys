@@ -8,24 +8,98 @@ body {
     color: #0057b8;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
 
 
 .welcome-section {
+    position: relative;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
-    background-color: #0057b8;
     color: white;
     font-size: 20pt;
+    transition: opacity 0.5s ease;
+}
+
+.background-image {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/estella.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.background-image::before {
+    content: "";
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 87, 184, 0.5);
+    mix-blend-mode: multiply;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+
+.background-image::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    z-index: 1;
 }
 
 
 
 main {
     margin-bottom: 150px;
+    opacity: 0;
+    height: 100vh;
 }
+
+main section {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 2s, opacity 2s;
+    text-align: center;
+}
+
+main section.visible {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+main section p {
+    opacity: 0;
+    text-align: left;
+    transform: translateX(100%);
+    transition: transform 2s, opacity 2s;
+    padding: 0 20px;
+}
+
+main section p.visible {
+    opacity: 1;
+    transform: translateX(0);
+    padding: 0 20px;
+}
+
 
 a:link a:visited {
     color: #FFD700;
@@ -52,4 +126,15 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 1;
 }
