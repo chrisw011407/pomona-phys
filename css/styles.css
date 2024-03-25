@@ -8,26 +8,23 @@ body {
     color: #0057b8;
 }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+
 
 .welcome-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
     background-color: #0057b8;
     color: white;
-    font-size: 2rem;
+    font-size: 20pt;
 }
 
-header,
+
+
 main {
-    display: none;
+    margin-bottom: 150px;
 }
 
 a:link a:visited {
@@ -45,13 +42,6 @@ a:link a:active {
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-header {
-    background-color: #0057b8;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
 }
 
 footer {
