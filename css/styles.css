@@ -4,8 +4,30 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: #0057b8;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #0057b8;
     color: white;
+    font-size: 2rem;
+}
+
+header,
+main {
+    display: none;
 }
 
 a:link a:visited {
@@ -26,14 +48,14 @@ a:link a:active {
 }
 
 header {
-    background-color: #333;
+    background-color: #0057b8;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
 
 footer {
-    background-color: #333;
+    background-color: #0057b8;
     color: white;
     text-align: center;
     padding: 10px 0;
