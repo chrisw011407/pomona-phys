@@ -1,0 +1,31 @@
+/* calendar.css */
+
+.fc-header-toolbar {
+    margin-bottom: 20px;
+}
+
+.fc-header-toolbar h2 {
+    color: #0057b8;
+}
+
+.fc-button {
+    background-color: #0057b8;
+    border-color: #0057b8;
+    color: white;
+}
+
+.fc-button:hover {
+    background-color: #003f87;
+    border-color: #003f87;
+}
+
+.fc-event {
+    background-color: #0057b8;
+    border-color: #0057b8;
+    color: white;
+}
+
+.fc-event:hover {
+    background-color: #003f87;
+    border-color: #003f87;
+}

@@ -138,3 +138,48 @@ footer::before {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     z-index: 1;
 }
+
+
+/* Calendar page styles */
+#calendar {
+    margin-top: 50px;
+}
+
+#event-form,
+#notification-form {
+    margin-top: 30px;
+}
+
+#event-form h2,
+#notification-form h2 {
+    color: #0057b8;
+    margin-bottom: 10px;
+}
+
+#event-form form,
+#notification-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#event-form label,
+#notification-form label {
+    margin-bottom: 5px;
+}
+
+#event-form input,
+#event-form textarea,
+#notification-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #0057b8;
+}
+
+#event-form button,
+#notification-form button {
+    background-color: #0057b8;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
